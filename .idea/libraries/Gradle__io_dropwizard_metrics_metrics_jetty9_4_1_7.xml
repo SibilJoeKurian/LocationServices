@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.dropwizard.metrics:metrics-jetty9:4.1.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-jetty9/4.1.7/2270f1f5150b50608ec25b414e5219927bce3a3/metrics-jetty9-4.1.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.dropwizard.metrics/metrics-jetty9/4.1.7/42004adc9a0ac35fa52dd83bd85f72cf3bbfdf48/metrics-jetty9-4.1.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.dropwizard:dropwizard-lifecycle:2.0.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-lifecycle/2.0.9/ff40a08ea928bf404a2bf0f0cca8f96465949886/dropwizard-lifecycle-2.0.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.dropwizard/dropwizard-lifecycle/2.0.9/6048df63195e843d4f09e3fb10f5c115b4b44e30/dropwizard-lifecycle-2.0.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
