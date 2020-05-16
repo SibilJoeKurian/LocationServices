@@ -4,7 +4,9 @@ public class BaseEntity {
     private long id;
     private long createdOn;
     private long modifiedOn;
+    public BaseEntity(){
 
+    }
     public BaseEntity(long id, long createdOn, long modifiedOn) {
         this.id = id;
         this.createdOn = createdOn;

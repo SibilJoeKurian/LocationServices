@@ -1,0 +1,10 @@
+task copyApp(type: Copy,dependsOn: "build"){
+from("${buildDir}/libs"){
+    include "*.jar"
+    rename {"locations-services.jar"}
+ }
+    from(fileTree("${projectDir}/config/").files){
+        include "**/*.yml"
+    }
+    into ("${rootDir}/docker/${project.name}")
+}

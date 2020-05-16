@@ -6,15 +6,18 @@ import com.sibil.location.Data.Type;
 
 public class Location extends BaseEntity{
     private Country country;
-    private String LocationCode;
+    private String code;
     private State state;
     private Type type;
     private String location;
 
-    public Location(long id, long createdOn, long modifiedOn, Country country, String locationCode, State state, Type type, String location) {
+    public Location(){
+
+    }
+    public Location(long id, long createdOn, long modifiedOn, Country country, State state, Type type,String code, String location) {
         super(id, createdOn, modifiedOn);
         this.country = country;
-        LocationCode = locationCode;
+        this.code = code;
         this.state = state;
         this.type = type;
         this.location = location;
@@ -28,12 +31,12 @@ public class Location extends BaseEntity{
         this.country = country;
     }
 
-    public String getLocationCode() {
-        return LocationCode;
+    public String getCode() {
+        return code;
     }
 
-    public void setLocationCode(String locationCode) {
-        LocationCode = locationCode;
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public State getState() {

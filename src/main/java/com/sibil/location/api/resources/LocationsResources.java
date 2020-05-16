@@ -1,11 +1,10 @@
 package com.sibil.location.api.resources;
 
 import com.sibil.location.business.services.LocationService;
+import com.sibil.location.model.Location;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.Produces;
+import javax.validation.constraints.NotNull;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -20,6 +19,17 @@ public LocationsResources(final LocationService locationService){
 //Get all data from database
     @GET
     public Response getLocation(){
-    return Response.ok().entity("{\"id\":\"2\"}").build();
+    return Response.ok().entity(this.locationService.getLocation()).build();
+    }
+    @GET
+    @Path("{id}")
+    public Response getLocation(@PathParam("id") final int id){
+        //return Response.ok().entity(id).build();
+        return Response.ok().entity(this.locationService.getLocation(id)).build();
+    }
+    @POST
+    public Response insertLocation(final @NotNull Location location){
+        this.locationService.insertLocation(location);
+        return Response.ok().build();
     }
 }

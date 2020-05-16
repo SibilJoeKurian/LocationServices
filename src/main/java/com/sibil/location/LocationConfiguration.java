@@ -20,3 +20,12 @@ public class LocationConfiguration extends Configuration {
         this.dataSourceFactory=dataSourceFactory;
     }
 }
+
+
+
+
+
+
+
+
+

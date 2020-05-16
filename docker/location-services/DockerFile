@@ -1,0 +1,8 @@
+FROM anapsix/alpine-java
+
+EXPOSE 8080
+EXPOSE 8081
+
+COPY location-services.jar .
+COPY config.yml .
+CMD["jsva", "-jar", "location-services.jar","server","config.yml"]

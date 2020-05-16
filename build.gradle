@@ -1,11 +1,26 @@
-group 'com.sibil.funproject'
+
+
+buildscript {
+    repositories {
+       jcenter()
+    }
+    dependencies {
+        classpath "com.github.jengelman.gradle.plugins:shadow:2.0.2"
+    }
+}
+
+
+group 'com.sibil'
 version '1.0-SNAPSHOT'
-
+apply plugin: "com.github.johnrengelman.shadow"
 apply plugin: 'java'
-
+apply from : "./gradle/docker/docker.gradle"
 sourceCompatibility = 1.8
 
+mainClassName
+
 repositories {
+    jcenter()
     mavenCentral()
 }
 
@@ -18,4 +33,12 @@ dependencies {
 // https://mvnrepository.com/artifact/mysql/mysql-connector-java
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.13'
 
+}
+
+run {
+    args "serever" ,"${projectDir}/config/config.yml"
+}
+
+task wrapper (type:wrapper){
+    gradleVersion="3.5"
 }
